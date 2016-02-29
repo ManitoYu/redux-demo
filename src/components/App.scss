@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  padding: 1rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  cursor: pointer;
+}
+
+.add-post {
+  display: flex;
+}
+
+.posts-list {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding: 1rem;
+  border: 1px solid #eee;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .4);
+
+  .post-item {
+    padding: .5rem 0;
+
+    & + .post-item {
+      border-top: 1px solid #ddd;
+    }
+
+    .close {
+      float: right;
+    }
+  }
+}
